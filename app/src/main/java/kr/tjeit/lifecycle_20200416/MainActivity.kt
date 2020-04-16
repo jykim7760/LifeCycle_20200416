@@ -24,6 +24,16 @@ class MainActivity : BaseActivity() {
 
     }
 
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("MainActivity", "onPause실행")
+    }
+
+
+
+
+
     override fun setupEvents() {
 
         nextBtn.setOnClickListener {
