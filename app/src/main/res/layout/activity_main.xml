@@ -7,5 +7,10 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다음화면으로 이동" />
 
 </LinearLayout>
