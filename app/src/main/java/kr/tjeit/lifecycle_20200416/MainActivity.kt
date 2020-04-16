@@ -3,6 +3,7 @@ package kr.tjeit.lifecycle_20200416
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -12,6 +13,15 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
         setupEvents()
         setValues()
+
+        Log.d("MainActivity", "onCreate실행됨")
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Log.d("MainActivity", "onResume실행됨")
+
     }
 
     override fun setupEvents() {
